@@ -19,7 +19,7 @@ Tristan McGowan (tristan@ipspy.net)
 ## Features
 
 - Unified access to environment variables across different serverless platforms.
-- Simplified session and request data management in a serverless context.
+- Simplified session and request data management in a serverless context. (Currently in exploritory development as `$_REQUEST` is not a constant across all Lambda equilivant providers)
 - Comprehensive file system exploration tailored for serverless PHP environments.
 - Optional inclusion of base64 encoded file contents for in-depth environment analysis.
 - Dynamic detection of server resources to tailor environment data retrieval.
@@ -28,7 +28,7 @@ Tristan McGowan (tristan@ipspy.net)
 
 ### Prerequisites
 
-- PHP 7.4 or newer.
+- PHP 8.2 or newer.
 - Access to serverless environments such as AWS Lambda, Google Cloud Functions, or Digital Ocean Functions.
 
 ### Setup Guide
