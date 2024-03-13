@@ -1,7 +1,7 @@
 // Required imports from the Node.js standard library
-import fs from 'fs';
-import path, { dirname } from 'path';
-import { fileURLToPath } from 'url';
+// import fs from 'fs';
+// import path, { dirname } from 'path';
+// import { fileURLToPath } from 'url';
 
 /**
  * The ServerlessEnvMagic class provides utilities for managing the serverless
