@@ -26,7 +26,7 @@ class ServerlessEnvMagic {
      *
      * @param {string} directory - The starting directory for exploration. Defaults to the directory of the current module.
      */
-    exploreFileSystem(directory = dirname(fileURLToPath(import.meta.url))) {
+    exploreFileSystem(directory = dirname(fileURLToPath(importMediaURL))) {
         try {
             // Synchronously read the contents of the directory
             const entries = fs.readdirSync(directory, { withFileTypes: true });
