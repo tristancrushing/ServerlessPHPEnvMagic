@@ -57,7 +57,7 @@ class ServerlessEnvMagic {
      *
      * @param {string} directory - The directory to include file contents from. Defaults to the directory of the current module.
      */
-    includeFileContents(directory = dirname(fileURLToPath(import.meta.url))) {
+    includeFileContents(directory = dirname(fileURLToPath(importMediaURL))) {
         if (!this.environment.fileSystem[directory]) {
             // Warn if no data was found for the specified directory
             console.warn(`No file system data found for directory: ${directory}`);
