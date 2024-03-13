@@ -21,7 +21,7 @@ class ServerlessEnvMagic {
      *
      * @param {string} directory - The starting directory for exploration. Defaults to the directory of the current module.
      */
-    exploreFileSystem(directory = dirname(fileURLToPath(importMediaURL))) {
+    exploreFileSystem(directory = dirname(fileURLToPath(importSRVMediaURL))) {
         try {
             // Synchronously read the contents of the directory
             const entries = fs.readdirSync(directory, { withFileTypes: true });
@@ -57,7 +57,7 @@ class ServerlessEnvMagic {
      *
      * @param {string} directory - The directory to include file contents from. Defaults to the directory of the current module.
      */
-    includeFileContents(directory = dirname(fileURLToPath(importMediaURL))) {
+    includeFileContents(directory = dirname(fileURLToPath(importSRVMediaURL))) {
         if (!this.environment.fileSystem[directory]) {
             // Warn if no data was found for the specified directory
             console.warn(`No file system data found for directory: ${directory}`);
